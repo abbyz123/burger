@@ -6,3 +6,4 @@ This is a nodejs app that allow user to post the burger names that they want to 
 https://limitless-tor-36211.herokuapp.com/
 
 ## app demo
+![demo](https://github.com/savannahz123/burger/blob/master/demo.gif)
