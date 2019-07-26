@@ -4,27 +4,30 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 columnLeft">
             {{#each burgers}}
-                {{#if devoured}}
-                    <!--do nothing-->
-                {{else}}
-                    {{> burgers/burger-block devour=true}}
-                {{/if}}
+            {{#if devoured}}
+            <!--do nothing-->
+            {{else}}
+            {{> burgers/burger-block devour=true}}
+            {{/if}}
             {{/each}}
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 columnRight">
             {{#each burgers}}
-                {{#if devoured}}
-                    {{> burgers/burger-block devour=false}}
-                {{else}}
-                    <!--do nothing-->
-                {{/if}}
+            {{#if devoured}}
+            {{> burgers/burger-block devour=false}}
+            {{else}}
+            <!--do nothing-->
+            {{/if}}
             {{/each}}
         </div>
     </div>
 </div>
-<form id="addBurger">
-    <textarea name="burger" placeholder="add a burger here"></textarea>
-    <button type="submit">Add the burger!</button>
-</form>
+<div class="container burgerForm">
+    Feel like a burger? Add it to the list!
+    <form id="addBurger">
+        <textarea name="burger" placeholder="add a burger here"></textarea>
+        <button type="submit">Add the burger!</button>
+    </form>
+</div>

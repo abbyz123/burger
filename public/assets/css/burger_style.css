@@ -1,0 +1,14 @@
+/* body */
+body {
+    background-color: orange
+}
+
+/* burger submit form styling */
+.burgerForm {
+    margin-top: 20px;
+}
+
+/* burger list styling */
+li {
+    margin-top : 10px;
+}
